@@ -1,75 +1,167 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌙 LumiStrip
 
-Currently, two official plugins are available:
+### Create dreamy Korean-inspired photo strips directly in your browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+No downloads. No account. Just memories.
 
-## React Compiler
+<img src="./public/preview.png" alt="LumiStrip Preview" width="850"/>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[🚀 Live Demo](https://YOUR-VERCEL-LINK.vercel.app) • [⭐ Star this Repo](https://github.com/jisha7/lumistrip)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ About
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+LumiStrip is a web-based virtual photo booth inspired by the cozy aesthetic of Korean photo studios.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Capture memories with friends, decorate them with beautiful templates, and download a printable photo strip—all from your browser.
 
+Built as a rapid MVP using modern web technologies.
+
+---
+
+## 📸 Features
+
+- 📷 Browser Camera Access
+- ⏳ Animated Countdown
+- 🎞 Multi-photo Capture
+- 🎨 Beautiful Photo Strip Templates
+- 🎀 Stickers & Decorations
+- 🖼 Live Preview
+- 📥 High-quality Download
+- 📱 Responsive Design
+
+---
+
+## 🎯 Vision
+
+LumiStrip isn't just a camera.
+
+It's a digital memory booth.
+
+Our goal is to make taking photos feel playful, nostalgic, and beautiful—just like stepping into a real Korean photo booth.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| React | UI |
+| TypeScript | Type Safety |
+| Vite | Build Tool |
+| Framer Motion | Animations |
+| React Webcam | Camera Access |
+| HTML Canvas | Photo Strip Generation |
+| CSS | Styling |
+| Vercel | Deployment |
+
+---
+
+## 🖥 Screenshots
+
+### Landing Page
+
+<img width="2517" height="1338" alt="image" src="https://github.com/user-attachments/assets/862f7724-dd8c-45e4-9153-15865bfeffc9" />
+
+
+---
+
+### Camera Experience
+
+<img width="2518" height="1327" alt="image" src="https://github.com/user-attachments/assets/084873c9-f889-4f44-93f2-01b961639617" />
+
+
+---
+
+### Photo Strip
+
+<img width="900" height="2760" alt="lumistrip-1785087073535" src="https://github.com/user-attachments/assets/882656eb-2071-403b-a43f-25430b43c6c3" />
+
+
+
+---
+
+## 🚀 Running Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/jisha7/lumistrip.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Go inside
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd lumistrip
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install packages
+
+```bash
+npm install
+```
+
+Run
+
+```bash
+npm run dev
+```
+
+Build
+
+```bash
+npm run build
+```
+
+---
+
+## 📂 Project Structure
 
 ```
+src
+├── assets
+├── components
+├── hooks
+├── pages
+├── utils
+├── styles
+└── App.tsx
+```
+
+---
+
+## 🌱 Future Roadmap
+
+- AI-powered templates
+- Seasonal template packs
+- Premium sticker collections
+- QR code sharing
+- Memory gallery
+- Collaborative photo sessions
+- Custom fonts
+- More export formats
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and feedback are welcome.
+
+If you'd like to improve LumiStrip, feel free to open an Issue or submit a Pull Request.
+
+---
+
+
+
+<div align="center">
+
+Made with ❤️ using React + TypeScript
+
+If you enjoyed this project, consider giving it a ⭐
+
+</div>

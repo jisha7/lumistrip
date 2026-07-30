@@ -1,0 +1,151 @@
+/* ============================================
+   LumiStrip — Design System Tokens
+   Korean soft aesthetic, dreamy pastel palette
+   ============================================ */
+
+:root {
+  /* ── Color Palette — "Film Booth" identity ──
+     Warm paper + flash-gel colors, not generic purple/pink glass. */
+  --paper: #fbf6ee;
+  --paper-deep: #f3ecdd;
+  --ink: #221d28;
+  --ink-soft: #4a4152;
+  --flash-pink: #f4c7c3;
+  --flash-pink-deep: #e8a6a3;
+  --dusty-lilac: #c9bfe8;
+  --film-sage: #a9c2a0;
+  --flash-gold: #f0b94e;
+  --booth-black: #17151c;
+
+  /* legacy pastel aliases kept so nothing else breaks while migrating */
+  --pastel-lavender: var(--dusty-lilac);
+  --pastel-pink: var(--flash-pink);
+  --pastel-blue: #dee8f5;
+  --pastel-peach: #ffe8d6;
+  --pastel-mint: var(--film-sage);
+  --pastel-yellow: var(--flash-gold);
+  --pastel-rose: var(--flash-pink);
+  --pastel-lilac: var(--dusty-lilac);
+  --pastel-sky: #e3f2fd;
+
+  /* ── Primary Brand Gradients — warm flash-gel tones ── */
+  --gradient-primary: linear-gradient(135deg, var(--flash-pink-deep), var(--flash-gold));
+  --gradient-secondary: linear-gradient(135deg, var(--dusty-lilac), var(--flash-pink));
+  --gradient-warm: linear-gradient(135deg, var(--flash-gold), var(--flash-pink-deep));
+  --gradient-cool: linear-gradient(135deg, var(--dusty-lilac), var(--film-sage));
+  --gradient-magic: linear-gradient(135deg, var(--dusty-lilac), var(--flash-pink), var(--flash-gold));
+  --gradient-sunset: linear-gradient(135deg, var(--flash-gold), var(--flash-pink-deep));
+  --gradient-ocean: linear-gradient(135deg, var(--film-sage), var(--dusty-lilac));
+  --gradient-forest: linear-gradient(135deg, var(--film-sage), #7fa876);
+
+  /* ── Film paper surfaces (replaces glassmorphism as the primary surface) ── */
+  --glass-bg: rgba(255, 252, 245, 0.72);
+  --glass-bg-dark: rgba(23, 21, 28, 0.55);
+  --glass-border: rgba(34, 29, 40, 0.08);
+  --glass-border-dark: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 28px rgba(34, 29, 40, 0.08);
+  --glass-shadow-lg: 0 20px 44px rgba(34, 29, 40, 0.14);
+  --glass-blur: blur(14px);
+  --glass-blur-lg: blur(20px);
+
+  /* ── Shadows — soft paper depth, warm flash glow instead of neon ── */
+  --shadow-sm: 0 1px 3px rgba(34, 29, 40, 0.06), 0 1px 2px rgba(34, 29, 40, 0.04);
+  --shadow-md: 0 4px 14px rgba(34, 29, 40, 0.08);
+  --shadow-lg: 0 14px 36px rgba(34, 29, 40, 0.1);
+  --shadow-xl: 0 26px 52px rgba(34, 29, 40, 0.14);
+  --shadow-glow-purple: 0 0 26px rgba(240, 185, 78, 0.35);
+  --shadow-glow-pink: 0 0 26px rgba(232, 166, 163, 0.4);
+
+  /* ── Border Radius ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Spacing ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── Typography ──
+     Fraunces: warm optical-size serif for headlines — a boutique film-label feel,
+     not another geometric sans. Pretendard/Inter for UI body. Gaegu reserved for
+     handwritten strip captions only, never UI chrome. */
+  --font-display: 'Fraunces', 'Noto Serif KR', Georgia, serif;
+  --font-body: 'Pretendard', 'Inter', system-ui, sans-serif;
+  --font-hand: 'Gaegu', 'Nanum Pen Script', cursive;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.25rem;
+  --text-6xl: 4rem;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+
+  /* ── Font Weights ── */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* ── Z-Index Scale ── */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ── Animation ── */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* ── Strip Layout ── */
+  --strip-width: 360px;
+  --strip-photo-height: 320px;
+  --strip-gap: 6px;
+  --strip-padding: 16px;
+  --strip-border-radius: 12px;
+}
+
+/* ── Dark Mode ── */
+[data-theme='dark'] {
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --glass-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+

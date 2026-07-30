@@ -1,0 +1,40 @@
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 2rem;
+
+  background: #f7f4ff;
+}
+
+.hero-image {
+  width: 650px;
+  max-width: 90%;
+
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: #5b4bc4;
+
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 600px;
+
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}

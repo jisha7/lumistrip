@@ -1,0 +1,14 @@
+{
+  "name": "LumiStrip",
+  "short_name": "LumiStrip",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/lumiStriplogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]   
+}
+

@@ -6,9 +6,10 @@
 
 No downloads. No account. Just memories.
 
-<img src="./public/preview.png" alt="LumiStrip Preview" width="850"/>
+<img width="2489" height="913" alt="image" src="https://github.com/user-attachments/assets/d367033f-3582-4c3c-8c18-30828b2ee8a0" />
 
-[🚀 Live Demo](https://YOUR-VERCEL-LINK.vercel.app) • [⭐ Star this Repo](https://github.com/jisha7/lumistrip)
+
+[🚀 Live Demo]((https://lumistrip.vercel.app/)) • [⭐ Star this Repo](https://github.com/jisha7/lumistrip)
 
 </div>
 
